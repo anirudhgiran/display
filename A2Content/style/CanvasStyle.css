@@ -1,0 +1,36 @@
+/*
+ * Anirudh Giran
+ * 991570520
+ * Assignment 2
+ * Date: February 6,2020
+ */
+
+#canvasDiv {
+    background-color: beige;
+    border-style: inset;
+    border-width: 5px;
+    position:absolute;
+    left:15vw;
+    top: 20vh;
+    
+}
+
+#canvas{
+    width: 65vw;
+    height: 60vh;
+}
+
+section {
+    grid-template-columns:auto auto auto auto auto;
+    position:relative;
+    top: 70vh;
+    left:32vw;
+    font-size: 1.2em;
+    height: 2vh;
+    width: 0vw;    
+}
+
+button {
+    width: 5vw;
+    margin: 2vw;
+}

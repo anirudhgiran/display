@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Anirudh Giran
+991570520
+Date: January 21, 2020
+Assignment #1
+-->
+<html>
+    <head>
+        <title>Assignment 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/LayoutStyle.css" />
+        <link rel="stylesheet" href="style/CanvasStyle.css" />
+        <link rel="icon" href="../images/anirudh.ico" type="image/ico"  />
+        <script type="text/javascript" src="scripts/CanvasScript.js"></script>
+    </head>
+    <body onload="startUp()">
+        
+        
+        <!-- Header - STARTS -->
+        <header>Anirudh Inc.</header>
+        <!-- Header - END -->
+        
+        <!-- Navigation - STARTS -->
+        <nav>
+            <ol>
+                <li>
+                    <a href="../index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/anirudhgiran" 
+                       onclick="window.open(this.href); return false">
+                        Meet the Developer
+                    </a>
+                </li>
+                <li>
+                    <a href="../A3Content/A3.html"> Assignment 3 </a>
+                </li>
+                <li>
+                    <a href="../A4Content/A4.html"> Assignment 4 </a>
+                </li>
+            </ol>
+        </nav>
+        <!-- Navigation - END -->
+        
+        <!-- Canvas - STARTS -->
+        <div id="canvasDiv">
+            <canvas id="canvas">
+            </canvas>
+        </div>
+        <!-- Canvas - END -->
+        
+        <!-- Buttons - STARTS -->
+        <section>
+            <button type="button" onclick="showName()">Name</button>
+            <button type="button" onclick="squareLoop()">Square</button>
+            <button type="button" onclick="setTimeout(showInitialA,3000),setTimeout(showInitialG,6000),setTimeout(showInitialS,9000)">Initials</button>
+            <button type="button" onclick="clearCanvas()">Clear</button>
+        </section>
+        <!-- Buttons - END -->    
+        
+    </body>
+</html>
