@@ -1,0 +1,31 @@
+/*
+Anirudh Giran
+991570520
+Date: January 21, 2020
+Assignment #1
+*/
+body{
+    background-image:url("../images/comingSoon.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+h1 {
+    font-family: courier new;
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align:center;
+    margin-top: 40vh;
+    font-size: 4em;
+}
+
+h2 {font-family: courier new;
+    text-align:center;
+    margin-top: 10vh;
+    font-size: 2em;
+}
+
+h2 a{
+    color:white;
+    text-shadow: 0 0 10px black;
+}
+
