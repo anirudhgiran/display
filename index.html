@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+Anirudh Giran
+991570520
+Date: January 21, 2020
+Assignment #1
+-->
+<html>
+    <head>
+        <title>Anirudh Inc.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/LayoutStyle.css" />
+        <link rel="stylesheet" href="style/MobileStyle.css" media="screen and (max-width: 768px )"  />
+        <link rel="icon" href="images/anirudh.ico" type="image/ico"  />
+        <script type="text/javascript"  src="script/order.js"></script>
+    </head>
+    <body onload="startUp()">
+        
+        <!-- Header - STARTS -->
+        <header>Anirudh Inc.</header>
+        <!-- Header - END -->
+        
+        <!-- Navigation - STARTS -->
+        <nav>
+            <ol>
+                <li>
+                    <a href="https://www.instagram.com/anirudhgiran" 
+                       onclick="window.open(this.href); return false">
+                        Meet the Developer
+                    </a>
+                </li>
+                <li>
+                    <a href="A2Content/A2.html"> Canvas </a>
+                </li>
+                <li>
+                    <a href="A3Content/A3.html"> Assignment 3 </a>
+                </li>
+                <li>
+                    <a href="A4Content/A4.html"> Assignment 4 </a>
+                </li>
+            </ol>
+        </nav>
+        <!-- Navigation - END -->
+        
+        <!-- Main - STARTS -->
+        <main>
+            
+            <p>iPhone 11</p>
+            <p>OnePlus 6T</p>
+            <p>Samsung S10</p>
+            <p>Google Pixel 4</p>
+            
+            <a><img id="iphone" src="images/iphone11.png" alt="iPhone 11" onclick="iphoneOrder()"> </a>
+            <a><img id="oneplus" src="images/oneplus6t.png" alt="OnePlus 6T" onclick="oneplusOrder()"> </a>
+            <a><img id="s10" src="images/s10.png" alt="Samsung S10" onclick="samsungOrder()"> </a>
+            <a><img id="pixel" src="images/pixel4.png" alt="Google Pixel 4" onclick="pixelOrder()"> </a>
+
+            <p>iPhone 11 is a device by Apple Inc. launched in 2019</p>
+            <p>Oneplus 6T is an android device manufactured by OnePlus Inc.</p>
+            <p>S10 is also an android device manufactured by Samsung Inc.</p>
+            <p>Pixel 4 is a mobile phone manufactured by Google Inc.</p>
+
+            <p id="iphoneInfo" onclick="iphoneInfo()"
+               onmouseout="resetiphoneInfo()">More Information</p>
+            <p id="oneplusInfo" onclick="oneplusInfo()"
+               onmouseout="resetoneplusInfo()">More Information</p>
+            <p id="samsungInfo" onclick="samsungInfo()"
+               onmouseout="resetsamsungInfo()">More Information</p>
+            <p id="pixelInfo" onclick="pixelInfo()"
+               onmouseout="resetpixelInfo()">More Information</p>
+
+        </main>
+        <!-- Main - ENDS -->
+        
+        <!-- Section 1 - STARTS -->
+        <section>
+            <h6 id="iphoneCount">iPhone 11 Orders: 0</h6>
+            <h6 id="oneplusCount">OnePlus 6T Orders: 0</h6>
+            <h6 id="samsungCount">Samsung S10 Orders: 0</h6>
+            <h6 id="pixelCount">Google Pixel 4 Orders: 0</h6>
+        </section>
+        <!-- Section 1 - ENDS -->
+        
+        <!-- Section 2 - STARTS -->
+        <section id="total">
+            <button type="button" onclick="totalCount()">Total Orders</button>
+        </section>
+        <!-- Section 2 - ENDS -->
+        
+        <!-- Footer - STARTS -->
+        <footer>Anirudh Inc., Brampton, ON (L6T 3X4)</footer>
+        <!-- Footer - ENDS -->
+        
+    </body>
+</html>
